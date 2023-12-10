@@ -15,8 +15,15 @@
 }
 
 body{
-    background-color: #74EBD5;
-    background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+    background-color: #26547C;
+    background-image: linear-gradient(90deg, #26547C 0%, #74EBD5 100%);
+}
+
+h3{
+    margin: 0px auto;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #000000cc;   
 }
 
 hr{
@@ -51,4 +58,22 @@ ul.social-icons li:hover {
 ul.social-icons i {
     color: #000000aa; 
     font-size: 1.5rem;; 
+}
+
+.upper{
+    text-transform: uppercase;
+}
+
+.capitalize{
+    text-transform: capitalize;
+}
+
+.justify{
+    text-align: justify;
+}
+
+.destaque{
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 1.2rem;
 }

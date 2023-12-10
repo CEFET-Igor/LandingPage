@@ -2,11 +2,12 @@ main{
     max-width: 1440px;
     margin: 0px auto;
     padding: 0px 20px;
+    background-color: #FFFFFF08;
 }
 
 div.principal{
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
     gap: 10px;
@@ -15,17 +16,12 @@ div.principal{
 main section.info{
     display: flex;
     flex-flow: column nowrap;
-    max-width: 250px;
+    max-width: 300px;
     width: 100%;
-    height: 300px;
     gap: 10px;
-}
-
-main section.info h3{
-    text-align: center;
-    font-size: 1.5rem;
-    color: #000000cc;
-    
+    background-color: #FFFFFF70;
+    padding: 0px 10px;
+    border-radius: 10px;
 }
 
 main section.info p{
@@ -34,12 +30,41 @@ main section.info p{
     color: #000000b6;
 }
 
-main section.detalhes{
-    background-color: var(--verde);
-    text-align: center;
-    width: 800px;
-    height: 300px;
+main section.info section.formacao div{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1px;
+    margin-bottom: 10px;
+    color: #000000;
 }
+
+main section.detalhes{
+    display: flex;
+    flex-flow: column nowrap;
+    max-width: 500px;
+    width: 100%;
+}
+
+main section.info section.formacao,
+main section.detalhes section.experiencias{
+    display: flex;
+    width: 100%;
+    flex-flow: column nowrap;
+    gap: 10px;
+}
+
+main section.detalhes section.experiencias div{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 10px;
+
+}
+
 main section.projetos{
     background-color: var(--cinza);
     width: 100%;
