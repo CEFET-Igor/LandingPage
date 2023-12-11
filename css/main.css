@@ -62,12 +62,11 @@ main section.detalhes section.experiencias div{
     align-items: flex-start;
     gap: 10px;
     margin-bottom: 10px;
-
 }
 
 main section.projetos{
     width: 100%;
-    max-width: 800px;
+    max-width: 1440px;
     margin: 0px auto;
     display: flex;
     flex-flow: column wrap;
@@ -82,10 +81,12 @@ main section.projetos section.cards{
     justify-content: space-between;
     align-items: stretch;
     gap: 10px;
+    width: 100%;
 }
 
 main section.projetos section.cards div.card{
-    flex-basis: calc(50% - 10px); 
+    flex-basis: calc(33% - 10px);
+    flex-grow: 1;
     box-sizing: border-box; 
     background-color: #7f8c8d40;
 
@@ -97,6 +98,15 @@ main section.projetos section.cards div.card{
     padding: 10px;
     border-radius: 10px;
     border: 2px solid #000000;
+}
+@media screen and (max-width: 1000px){
+    main section.projetos{
+        max-width: 800px;
+    }
+    main section.projetos section.cards div.card{
+        flex-basis: calc(50% - 10px); 
+        min-width: 220px;
+    }  
 }
 
 main section.projetos section.cards div.card div.buttons{
