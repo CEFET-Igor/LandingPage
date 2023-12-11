@@ -44,7 +44,9 @@ main section.detalhes{
     display: flex;
     flex-flow: column nowrap;
     max-width: 500px;
+    min-width: 220px;
     width: 100%;
+    flex:1;
 }
 
 main section.info section.formacao,
