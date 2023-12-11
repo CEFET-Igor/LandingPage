@@ -1,7 +1,7 @@
 @charset "utf-8";
 @import url(header.css);
 @import url(main.css);
-
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Grandiflora+One&family=Inconsolata&display=swap');
 *{
     margin: 0px;
     padding: 0pc;
@@ -19,12 +19,30 @@ body{
     background-image: linear-gradient(90deg, #26547C 0%, #74EBD5 100%);
 }
 
+h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    color: #000000;
+    text-align: center;
+    font-weight: bolder;
+}
+
 h3{
+    font-family: 'Grandiflora One', cursive;
     margin: 0px auto;
     text-align: center;
-    font-size: 1.5rem;
-    color: #000000cc;   
+    font-size: 1.7em;
+    color: #000000cc;
+    
+    border-bottom: 10px dotted var(--laranja);
+    padding: 0px 5px;
 }
+
+p{
+    font-family: 'Inconsolata', monospace;
+    font-size: 1rem;
+    color: #000000;
+}   
 
 hr{
     border: 1px solid #000000b0;
