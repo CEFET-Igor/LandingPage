@@ -33,6 +33,7 @@ h3{
     text-align: center;
     font-size: 1.7em;
     color: #000000cc;
+    width: fit-content;
     
     border-bottom: 10px dotted var(--laranja);
     padding: 0px 5px;
