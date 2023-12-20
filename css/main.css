@@ -40,6 +40,19 @@ main section.info section.formacao div{
     color: #000000;
 }
 
+section.info section.cursos ul{
+    list-style: none;
+    padding: 10px;
+    margin: 0px;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 8px;
+
+    font-family: 'Inconsolata', monospace;
+    font-size: 1rem;
+    color: #000000;
+}
+
 main section.detalhes{
     display: flex;
     flex-flow: column nowrap;
