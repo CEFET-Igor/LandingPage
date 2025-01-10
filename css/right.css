@@ -1,0 +1,9 @@
+section.right{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 900px;
+    flex: 0.5 1 700px;
+    background-color: var(--transparence20);
+}

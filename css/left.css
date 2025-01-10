@@ -1,0 +1,66 @@
+img{
+    max-width: 150px; 
+    max-height: 150px;
+    border-radius: 50%;
+}
+
+section.left{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    flex-grow: 1;
+    background-color: var(--transparence20);
+    height: 100%;
+}
+
+section.left section{
+    width: 100%;
+}
+
+@counter-style emoji-idiomas {
+    system: cyclic;
+    symbols: '\1F334' '\1F5FD' '\1F32E';
+    suffix: "  ";
+}
+
+ul.idiomas{
+    list-style-position: inside;
+    list-style-type: emoji-idiomas;
+    padding: 10px 0px;
+    font-size: 1rem;
+    line-height: 150%;
+}
+
+@counter-style emoji-competencias {
+    system: cyclic;
+    symbols: '\1F4DA' '\1F4BB' '\1F4AD' '\1F9D1' '\1F4D3';
+    suffix: "  ";
+}
+
+ul.competencias{
+    list-style-position: inside;
+    list-style-type: emoji-competencias;
+    padding: 10px 0px;
+    font-size: 1rem;
+    line-height: 150%;
+}
+
+@counter-style emoji-certificacoes {
+    system: cyclic;
+    symbols: '\1F4DA' '\1F4BB' '\1F4AD' '\1F9D1' '\1F4D3';
+    suffix: "  ";
+}
+
+ul.certificacoes{
+    text-align: center;
+    list-style-position: inside;
+    list-style-type: emoji-certificacoes;
+    padding: 10px 0px;
+    font-size: 1rem;
+    line-height: 150%;
+}
+
+
+

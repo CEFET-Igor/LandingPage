@@ -1,126 +1,53 @@
 @charset "utf-8";
-@import url(header.css);
-@import url(main.css);
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Grandiflora+One&family=Inconsolata&display=swap');
+@import url(left.css);
+@import url(right.css);
+
 *{
     margin: 0px;
     padding: 0pc;
 }
 
 :root {
-    --azul: #3498db;
-    --verde: #2ecc71;
-    --cinza: #7f8c8d;
-    --laranja: #e67e22;
+    --background: #0e22d1;
+    --transparence20: #ffffff33;
+    --transparence40: #ffffff66;
+    --transparence50: #ffffff80;
+    --transparence60: #ffffff99;
+    --transparence80: #ffffffcc;
+    --primary: #0078FF;
+    --secondary: #FF6F00;
+    --tertiary: #2A2A2A;
+    --quaternary: #39FF14;
+    --quinary: #8A2BE2;
 }
 
 body{
-    background-color: #26547C;
-    background-image: linear-gradient(90deg, #26547C 0%, #74EBD5 100%);
+    background: var(--tertiary);
+}
+
+main{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    justify-self: center;
+    max-width: 1200px;
+    min-height: 100vh;
+    background: rgb(57,255,20);
+    background: linear-gradient(39deg, var(--quaternary) 0%, var(--primary) 20%, var(--background) 80%, var(--quinary) 100%);
+}
+
+ul{
+    list-style: inside;
+    width: fit-content;
+    margin: 0px auto;
 }
 
 h1{
-    font-family: 'Dancing Script', cursive;
-    font-size: 2rem;
-    color: #000000;
-    text-align: center;
-    font-weight: bolder;
-}
-
-h3{
-    font-family: 'Grandiflora One', cursive;
-    margin: 0px auto;
-    text-align: center;
-    font-size: 1.7em;
-    color: #000000cc;
     width: fit-content;
-    
-    border-bottom: 10px dotted var(--laranja);
-    padding: 0px 5px;
-}
-
-h4{
-    font-family: 'Grandiflora One', cursive;
-    text-align: center;
-    font-size: 1.2em;
-    color: #000000;
-    
-    border-bottom: 1.5px solid var(--laranja);
-    padding: 0px 5px;
-}
-
-p{
-    font-family: 'Inconsolata', monospace;
-    font-size: 1rem;
-    color: #000000;
-}   
-
-hr{
-    border: 1px solid #000000b0;
-}
-
-/* *Icons */
-
-ul.social-icons {
-    list-style: none;
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    justify-content: center;
-}
-
-ul.social-icons li {
-    margin: 0 10px;
-    border: 2px solid #000000cc;
-    background-color: #ffffff50;
-    padding: 5px;
-    border-radius: 50%;
-}
-ul.social-icons li:hover {
-    background-color: #ffffffaa;
-}
-
-ul.social-icons i {
-    color: #000000aa; 
-    font-size: 1.5rem;; 
-}
-
-a {
-    text-decoration: none;
-    color: #000000;
-}
-
-button{
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-}
-
-footer{
-    padding: 20px 0px;
-    margin: 0px auto;
-    text-align: center;
-    max-width: 600px;
-}
-footer a{
+    font-size: 1.5rem;
     font-weight: bold;
-    text-decoration: underline;
-}
-
-.upper{
-    text-transform: uppercase;
-}
-
-.capitalize{
-    text-transform: capitalize;
-}
-
-.justify{
-    text-align: justify;
-}
-
-.destaque{
-    font-weight: bold;
-    text-decoration: underline;
-    font-size: 1.2rem;
+    text-align: center;
+    margin: 10px auto;
+    border-bottom: var(--secondary) 0.5rem dotted;
 }
