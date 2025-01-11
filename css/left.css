@@ -13,10 +13,20 @@ section.left{
     flex-grow: 1;
     background-color: var(--transparence20);
     height: 100%;
+    border-right: var(--secondary) dashed 2px;
 }
 
 section.left section{
     width: 100%;
+}
+
+section.left h1{
+    width: fit-content;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px auto;
+    border-bottom: var(--secondary) 0.5rem dotted;
 }
 
 @counter-style emoji-idiomas {
@@ -54,7 +64,6 @@ ul.competencias{
 }
 
 ul.certificacoes{
-    text-align: center;
     list-style-position: inside;
     list-style-type: emoji-certificacoes;
     padding: 10px 0px;

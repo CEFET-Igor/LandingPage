@@ -1,0 +1,77 @@
+section.Experiencias{
+  display: flex;
+  width: fit-content;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 50px;
+  gap: 10px;
+  position: relative;
+
+  h1, h2{
+    position: relative;
+  }
+}
+
+section.Formação{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-self: flex-start;
+  gap: 10px;
+  padding-left: 50px;
+  position: relative;
+
+  h1, h2{
+    position: relative;
+  }
+}
+
+section.Experiencias::before,
+section.Formação::before{
+  content: '';
+  position: absolute;
+  width: 0px;
+  height: 95%;
+  color: #ffffff;
+  border: #ffffff solid 1px;
+  top: 5px;
+  left: 25px;
+}
+
+section.Experiencias h1::before,
+section.Formação h1::before{
+  content: '\00A0\2713';
+  color: var(--quaternary);
+  position: absolute;
+  font-size: 1rem;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  top: 0px;
+  left: -35px;
+
+  background: #ffffff;
+  border: #ffffff solid 2px;
+  box-shadow: 0 0 10px var(--transparence50);  
+}
+
+section.Formação h1::before{
+  content: '\1F393';
+  font-size: 0.9rem;
+}
+
+section.Experiencias h2::before,
+section.Formação h2::before{
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background: var(--primary);
+  border: #ffffff solid 2px;
+  box-shadow: 0 0 10px var(--transparence50);  
+  top: 35%;
+  left: -31.5px;
+}

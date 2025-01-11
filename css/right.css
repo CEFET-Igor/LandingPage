@@ -6,4 +6,120 @@ section.right{
     max-width: 900px;
     flex: 0.5 1 700px;
     background-color: var(--transparence20);
+    gap: 10px;
+}
+
+section.Info-Pessoal{
+    display: flex;
+    width: 100%;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+section.Info-Pessoal h1{
+    font-size: 1.8rem;
+    text-decoration: underline;
+    text-decoration-color: var(--secondary);
+    text-underline-offset: 8px;
+}
+
+div.Info-Pessoal{
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+div.contact{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+i.linkedin{
+    color: var(--linkedin);
+}
+i.email{
+    color: var(--secondary);
+}
+i.github{
+    color: var(--tertiary);
+}
+i.whatsapp{
+    color: var(--quaternary);
+}
+i.instagram{
+    color: var(--quinary);
+}
+
+a.Social-link{
+    background-color: var(--transparence10);
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin: 5px;
+}
+a.Social-link.linkedin:hover{
+    background: linear-gradient(45deg, var(--primary) 0%, var(--linkedin) 100%);
+    color: var(--transparence60);
+}
+a.Social-link.email:hover{
+    background: linear-gradient(45deg, var(--email) 0%, #ff6f00c5 50%);
+    color: var(--transparence60);
+}
+a.Social-link.github:hover{
+    background: linear-gradient(45deg, var(--github) 0%, var(--transparence80) 100%);
+    color: var(--transparence60);
+}
+a.Social-link.whatsapp:hover{
+    background: linear-gradient(45deg, var(--whatsapp) 0%, var(--quaternary) 50%);
+    color: var(--transparence60);
+}
+a.Social-link.instagram:hover{
+    background: linear-gradient(45deg, var(--instagram) 0%, var(--quinary) 100%);
+    color: var(--transparence60);
+}
+
+section.Resumo{
+    display: flex;
+    width: 100%;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    p{
+        text-align: justify;
+        padding: 0px 10px;
+    }
+}
+
+section.Experiencias h1,
+section.Formação h1{
+    font-size: 1.5rem;
+    text-decoration: underline;
+    text-decoration-color: var(--secondary);
+    text-underline-offset: 8px;
+}
+
+section.Experiencias h2,
+section.Formação h2{
+    font-size: 1.2rem;
+}
+
+section.Experiencias h3,
+section.Formação h3{
+    font-size: 0.8rem;
+    color: #000000ee;
+}
+
+section.Experiencias p,
+section.Formação p{
+    text-align: justify;
+    padding-right: 10px;
 }
