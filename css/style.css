@@ -33,9 +33,14 @@ body{
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
+<<<<<<< HEAD
     align-items: center;
     min-height: 100vh;
 
+=======
+    min-height: 100vh;
+    
+>>>>>>> 79ef17ccc8c82aea58ecaca8aac714e8cd97fbab
     background: var(--quaternary);
     background: linear-gradient(39deg, var(--quaternary) 0%, var(--primary) 20%, var(--background) 80%, var(--quinary) 100%);
 }
