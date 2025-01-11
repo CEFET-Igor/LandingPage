@@ -7,8 +7,6 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/studentmeets_4873.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="novo-valor-de-integridade" crossorigin="anonymous">
-    <link rel="stylesheet" href="index.js">
-
 </head>
 <body>
     <main>
@@ -107,25 +105,6 @@
         </section>
     </main>
 
-    <script>
-        // Garantir que o script seja executado após o carregamento completo da página
-        window.addEventListener("load", () => {
-            // Selecionar as duas sections
-            const section1 = document.querySelector("section.right");
-            const section2 = document.querySelector("section.left");
-
-            // Obter as alturas das duas sections
-            const height1 = section1.offsetHeight;
-            const height2 = section2.offsetHeight;
-
-            // Determinar a altura maior
-            const maxHeight = Math.max(height1, height2);
-
-            // Aplicar a maior altura a ambas as sections
-            section1.style.height = `${maxHeight}px`;
-            section2.style.height = `${maxHeight}px`;
-        });
-    </script>
-
+    <script src="index.js"></script>
 </body>
 </html>
