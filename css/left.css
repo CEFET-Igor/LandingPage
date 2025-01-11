@@ -70,11 +70,6 @@ ul.certificacoes{
     padding: 10px 0px;
     font-size: 1rem;
     line-height: 150%;
-    
-    li{
-        text-wrap: nowrap;
-        padding: 0px 10px;
-    }
 }
 
 @media screen and (max-width: 800px){
