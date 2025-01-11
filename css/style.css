@@ -30,7 +30,14 @@
 }
 
 body{
-    background: var(--tertiary);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    background: var(--quaternary);
+    background: linear-gradient(39deg, var(--quaternary) 0%, var(--primary) 20%, var(--background) 80%, var(--quinary) 100%);
 }
 
 main{
@@ -38,11 +45,7 @@ main{
     flex-flow: row nowrap;
     justify-content: space-around;
     align-items: flex-start;
-    justify-self: center;
     max-width: 1200px;
-    min-height: 100vh;
-    background: rgb(57,255,20);
-    background: linear-gradient(39deg, var(--quaternary) 0%, var(--primary) 20%, var(--background) 80%, var(--quinary) 100%);
 }
 
 ul{
@@ -58,6 +61,11 @@ a{
 
 a:hover{
     color: var(--secondary);
+}
+
+ul li{
+    text-wrap: nowrap;
+    padding: 0px 10px;
 }
 
 @media screen and (max-width: 800px){
