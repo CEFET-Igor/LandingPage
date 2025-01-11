@@ -59,3 +59,9 @@ a{
 a:hover{
     color: var(--secondary);
 }
+
+@media screen and (max-width: 800px){
+    main{
+        flex-flow: column-reverse wrap;
+    } 
+}

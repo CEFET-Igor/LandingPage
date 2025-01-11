@@ -14,6 +14,7 @@ section.left{
     background-color: var(--transparence20);
     height: 100%;
     border-right: var(--secondary) dashed 2px;
+    padding-bottom: 10px;
 }
 
 section.left section{
@@ -69,7 +70,29 @@ ul.certificacoes{
     padding: 10px 0px;
     font-size: 1rem;
     line-height: 150%;
+    
+    li{
+        text-wrap: nowrap;
+        padding: 0px 10px;
+    }
 }
 
+@media screen and (max-width: 800px){
+    section.left{
+        flex-flow: row-reverse wrap;
+        max-width: 100%;
+        width: 100%;
+        border-right: transparent;
+        align-items: flex-start;
+        gap: 15px;
+    }
 
+    /* Foto de Perfil */
+    section.left > :first-child {
+        display: none;
+    }
 
+    section.left section{
+        width: fit-content;
+    }
+}
