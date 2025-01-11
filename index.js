@@ -10,10 +10,9 @@ function ajustarAlturaSecoes() {
     const section2 = document.querySelector("section.left");
 
     if (section1 && section2) {
-        if (window.innerWidth < 800) {
-            section1.style.height = "auto";
-            section2.style.height = "auto";
-        } else {
+        section1.style.height = "auto";
+        section2.style.height = "auto";
+        if (window.innerWidth > 800) {
             const height1 = section1.offsetHeight;
             const height2 = section2.offsetHeight;
 
