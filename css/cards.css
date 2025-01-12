@@ -35,7 +35,7 @@ section.cards{
 section.cards div.card{
   flex: 1 1 calc(30% - 20px);
   min-height: 100px;
-  min-width: 230px;
+  min-width: 250px;
   max-width: 500px;
   display: flex;
   flex-flow: column nowrap;
