@@ -72,6 +72,25 @@ ul.certificacoes{
     line-height: 150%;
 }
 
+button{
+    border-radius: 20px;
+    background-color: transparent;
+    border: var(--tertiary) 2px solid;
+    padding: 5px 10px;
+    margin: 5px;
+}
+
+button:hover{
+    background-color: var(--transparence40);
+    box-shadow: 0px 0px 5px 2px var(--transparence80);
+
+    a{
+        text-decoration: underline;
+        color: #000000;
+        font-weight: bold;
+    }
+}
+
 @media screen and (max-width: 800px){
     section.left{
         flex-flow: row-reverse wrap;
