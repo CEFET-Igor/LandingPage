@@ -2,6 +2,7 @@
 @import url(left.css);
 @import url(right.css);
 @import url(timeLine.css);
+@import url(cards.css);
 
 *{
     margin: 0px;
