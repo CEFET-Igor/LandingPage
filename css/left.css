@@ -1,0 +1,114 @@
+img{
+    max-width: 150px; 
+    max-height: 150px;
+    border-radius: 50%;
+}
+
+section.left{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 400px;
+    flex-grow: 1;
+    background-color: var(--transparence20);
+    height: 100%;
+    border-right: var(--secondary) dashed 2px;
+    padding-bottom: 10px;
+}
+
+section.left section{
+    width: 100%;
+}
+
+section.left h1{
+    width: fit-content;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px auto;
+    border-bottom: var(--secondary) 0.5rem dotted;
+}
+
+@counter-style emoji-idiomas {
+    system: cyclic;
+    symbols: '\1F334' '\1F5FD' '\1F32E';
+    suffix: "  ";
+}
+
+ul.idiomas{
+    list-style-position: inside;
+    list-style-type: emoji-idiomas;
+    padding: 10px 0px;
+    font-size: 1rem;
+    line-height: 150%;
+}
+
+@counter-style emoji-competencias {
+    system: cyclic;
+    symbols: '\1F4DA' '\1F4BB' '\1F4AD' '\1F9D1' '\1F4D3';
+    suffix: "  ";
+}
+
+ul.competencias{
+    list-style-position: inside;
+    list-style-type: emoji-competencias;
+    padding: 10px 0px;
+    font-size: 1rem;
+    line-height: 150%;
+}
+
+@counter-style emoji-certificacoes {
+    system: cyclic;
+    symbols: '\1F4DA' '\1F4BB' '\1F4AD' '\1F9D1' '\1F4D3';
+    suffix: "  ";
+}
+
+ul.certificacoes{
+    list-style-position: inside;
+    list-style-type: emoji-certificacoes;
+    padding: 10px 0px;
+    font-size: 1rem;
+    line-height: 150%;
+}
+
+button.Curriculo{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    margin: 5px;
+
+    a{
+        border-radius: 20px;
+        border: var(--tertiary) 2px solid;
+        padding: 5px 10px;
+    }
+}
+
+button.Curriculo:hover a{
+    text-decoration: underline;
+    color: #000000;
+    font-weight: bold;
+    background-color: var(--transparence40);
+    box-shadow: 0px 0px 5px 2px var(--transparence80);
+}
+
+@media screen and (max-width: 800px){
+    section.left{
+        flex-flow: row-reverse wrap;
+        max-width: 100%;
+        width: 100%;
+        border-right: transparent;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    /* Foto de Perfil */
+    section.left > :first-child {
+        display: none;
+    }
+
+    section.left section{
+        width: fit-content;
+    }
+}
